@@ -1,8 +1,8 @@
 Package.describe({
-  summary: 'Accounts Templates styled for Zurb Foundation.',
+  summary: 'Accounts Templates styled for Zurb Foundation for Sites.',
   version: '1.13.1',
-  name: 'useraccounts:foundation',
-  git: 'https://github.com/meteor-useraccounts/foundation.git',
+  name: 'useraccounts:foundation-sites',
+  git: 'https://github.com/meteor-useraccounts/foundation-sites.git',
 });
 
 Package.on_use(function(api, where) {
@@ -69,7 +69,7 @@ Package.on_use(function(api, where) {
 
 Package.on_test(function(api) {
   api.use([
-    'useraccounts:foundation',
+    'useraccounts:foundation-sites',
     'useraccounts:core@1.13.1',
   ]);
 
