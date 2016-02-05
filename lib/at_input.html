@@ -6,13 +6,13 @@
   <div class="at-input row {{#if isValidating}}validating{{/if}}">
     <div class="large-12 columns">
       {{#if showLabels}}
-        <label class="{{#if hasError}}error{{/if}}" for="at-field-{{_id}}">
+        <label class="{{#if hasError}}is-invalid-label{{/if}}" for="at-field-{{_id}}">
           {{displayName}} {{#unless required}}{{optionalText}}{{/unless}}
         </label>
       {{/if}}
-      <input type="{{type}}" class="{{#if hasError}}error{{/if}}" id="at-field-{{_id}}" name="at-field-{{_id}}" placeholder="{{placeholder}}" aria-label="{{displayName}} {{#unless required}}{{optionalText}}{{/unless}}" {{disabled}}>
+      <input type="{{type}}" class="{{#if hasError}}is-invalid-input{{/if}}" id="at-field-{{_id}}" name="at-field-{{_id}}" placeholder="{{placeholder}}" aria-label="{{displayName}} {{#unless required}}{{optionalText}}{{/unless}}" {{disabled}}>
       {{#if hasError}}
-        <small class="error">{{errorText}}</small>
+        <span class="form-error is-visible">{{errorText}}</span>
       {{/if}}
     </div>
   </div>
